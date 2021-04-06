@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  font-family: 'Lobster', cursive;
+  background-color: #fcfcfc;
+}
+
+
+.chat-area, .home {
+  margin-top: 250px;
+  
+}
+
+.chat-area {
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.chat-area .chat-bubble {
+  background-color: #bbdefb;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-family: 'Poppins', sans-serif;
+}
+
+.chat-bubble .chat-time {
+  font-size: 12px;
+  color: white;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+}
+
+.chat-area .chat-bubble.current-user {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: salmon;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-control {
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: rgb(245, 179, 177);
+  border-color: rgb(245, 179, 177);
+  color: black;
+}
+
+.btn:hover{
+  background-color: salmon;
+  border-color: salmon;
+  color: white;
+}
+
+.btn-submit {
+  background-color:rgb(245, 179, 177);
+  border-color: rgb(245, 179, 177);
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .form-control {
+    width: 100%;
+  }
+
+  .chat-area .chat-bubble {
+    max-width: 250px;
+  }
+}
+
